@@ -8,7 +8,7 @@
       ></v-parallax>
     </v-row>
     <div class="bg planeanimation">
-      <img class="plane" src="/assets/img/AirFigure.PNG" alt="airbus" />
+      <img class="plane" src="/assets/img/AirFigure.png" alt="airbus" />
       <v-row justify="start">
         <v-col
           cols="6"
@@ -109,7 +109,7 @@
       </v-row>
     </div>
     <div class="bg-2">
-      <h2 class="projectTitle">Projects</h2>
+      <h2 class="projectTitle" id="portfolio">Projects</h2>
 
       <v-row justify="center">
         <v-col

@@ -12,33 +12,26 @@
     rel="stylesheet"
   />
   <v-app style="background-color: red">
-    <v-app-bar density="compact" absolute style="background-color: orange">
-      <v-app-bar-title>Vuetify</v-app-bar-title>
-      <v-spacer></v-spacer>
-      <v-btn text><router-link to="/">Home</router-link></v-btn>
-      <v-divider inset vertical></v-divider>
-      <v-btn class="mr-sm-3" text
-        ><router-link to="/about">About</router-link></v-btn
-      >
-      <v-btn class="mr-sm-3" text
-        ><router-link to="/portfolio">portfolio</router-link></v-btn
-      >
-      <v-btn class="mr-sm-3" text
-        ><router-link to="/Desings">Desings</router-link></v-btn
-      >
-      <v-btn class="mr-sm-3" text
-        ><router-link to="/photography">photography</router-link></v-btn
-      >
-      <v-btn class="mr-sm-3" text
-        ><router-link to="/video">Video</router-link></v-btn
-      >
-      <v-btn variant="fill" icon="mdi-dots-vertical" color="white">
-        <v-icon>mdi-format-list-bulleted-square</v-icon>
-      </v-btn>
-    </v-app-bar>
-    <v-main style="background-color: #171717">
-      <router-view />
-    </v-main>
+    <v-layout style="overflow: hidden">
+      <v-app-bar absolute color="deep-purple">
+        <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+      </v-app-bar>
+      <v-navigation-drawer v-model="drawer" absolute temporary>
+        <v-list dense @click="drawer = false"
+          ><v-list-item title="Home" href="#"></v-list-item>
+          <v-list-item title="About" href="#about"></v-list-item>
+          <v-list-item title="Portfolio"></v-list-item>
+          <v-list-item title="Video" link="/about" href="#video"></v-list-item>
+          <v-list-item title="Graphic Desing" href="#desings"></v-list-item>
+          <v-list-item title="Photography" href="#photography"></v-list-item>
+          <v-list-item title="Web Development" href="#video"></v-list-item>
+        </v-list>
+      </v-navigation-drawer>
+
+      <v-main style="background-color: #171717">
+        <router-view />
+      </v-main>
+    </v-layout>
     <v-footer>
       <v-card
         elevation="0"
@@ -52,21 +45,21 @@
             icon="mdi-github"
             variant="plain"
             color="white"
+            @click="goWebSite('https://github.com/eliseomurillo9')"
           ></v-btn>
           <v-btn
             class="mx-4"
             icon="mdi-instagram"
-            
             variant="plain"
             color="white"
+            @click="goWebSite('')"
           ></v-btn>
           <v-btn
             class="mx-4"
             icon="mdi-linkedin"
-            href="www.linkedin.com/in/eliseomurillo9"
-            target="_blank"
             variant="plain"
             color="white"
+            @click="goWebSite('https://www.linkedin.com/in/eliseomurillo9')"
           ></v-btn>
         </v-card-text>
 
@@ -81,6 +74,18 @@
 </template>
 
 <script>
+export default {
+  data: () => ({
+    drawer: false,
+  }),
+
+  methods:{
+    goWebSite (site){
+      window.open(site, "_blank");
+
+    }
+  }
+};
 </script>
 
 <style>
