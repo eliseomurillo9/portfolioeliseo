@@ -4,7 +4,7 @@
     height="100vh"
     class="responsive-portrait"
     src="/assets/img/campamento.jpg"
-    ><div class="logo"><img src="/assets/img/logoem2.png" alt="logo" /></div>
+    ><div class="logo"><img src="/assets/img/logoem.png" alt="logo" /></div>
   </v-parallax>
   <v-parallax scale="1.3" dark src="/assets/img/backgroundrombos.jpg">
     <v-row align="center" justify="center">
