@@ -4,9 +4,9 @@
     height="100vh"
     class="responsive-portrait"
     src="/assets/img/campamento.jpg"
-    ><div class="logo"><img src="/assets/img/logoem.png" alt="logo" /></div>
+    ><div class="logo"><img src="/assets/img/logoem2.png" alt="logo" /></div>
   </v-parallax>
-  <v-parallax scale="1.5" dark src="/assets/img/backgroundrombos.jpg">
+  <v-parallax scale="1.3" dark src="/assets/img/backgroundrombos.jpg">
     <v-row align="center" justify="center">
       <v-col class="text-center box mt-12 ml-sm-5 mr-sm-5" cols="10">
         <div>
@@ -135,6 +135,8 @@
 
 .logo img {
   height: 75vh;
+  
+  margin-top: 7%;
 }
 .box {
   background-color: #363636;

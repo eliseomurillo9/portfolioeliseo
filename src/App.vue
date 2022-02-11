@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&family=Montserrat:wght@200;300;600;700;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&family=Montserrat:wght@200;300;600;700;900&family=Permanent+Marker&family=Titan+One&display=swap"
     rel="stylesheet"
   />
   <v-app style="background-color: red">

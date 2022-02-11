@@ -4,8 +4,8 @@
       <v-parallax
         scale="2"
         height="100vh"
-        src="/assets/img/COVERnew.jpg"
-      ></v-parallax>
+        src="/assets/img/COVERnew2.jpg"
+      ><div class="logo"><img src="/assets/img/logoem2.png" alt="logo" /></div></v-parallax>
     </v-row>
     <div class="bg planeanimation">
       <img class="plane" src="/assets/img/AirFigure.png" alt="airbus" />
@@ -181,6 +181,15 @@
   margin: 0%;
   padding: 0%;
 }
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  height: 75vh;
+  
+  margin-top: 7%;
+}
 h2 {
   font-size: 90px;
   text-align: center;
@@ -341,6 +350,16 @@ h4 {
   }
 }
 @media (max-width: 900px) {
+  .logo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+  }
+
+  .logo img {
+    height: 50vh;
+  }
   h2 {
     font-size: 20px;
     text-align: end;
@@ -375,10 +394,10 @@ h4 {
   }
 
   .projectTitle {
-    font-size: 90px;
+    font-size: 50px;
     text-align: center;
     padding-top: 55px;
-    padding-bottom: 55px;
+    padding-bottom: 5px;
     color: #3363a4;
   }
 
@@ -392,7 +411,67 @@ h4 {
     left: 98%;
     top: 0%;
   }
+
+  .animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: #fff;
+  border: solid;
+  height: 90px;
+  width: 150px;
+  border-color: rgb(109, 106, 106, 0.4);
+  border-radius: 15px;
+  background: linear-gradient(#464646, #1d1d1d);
+  transition: ease-in-out, 0.3s;
 }
+
+.animation-gd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: #fff;
+  border: solid;
+  height: 90px;
+  width: 150px;
+  border-color: rgb(109, 106, 106, 0.4);
+  border-radius: 15px;
+  background: linear-gradient(#464646, #1d1d1d);
+  transition: ease-in-out, 0.3s;
+}
+.animation-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: #fff;
+  border: solid;
+  height: 90px;
+  width: 150px;
+  border-color: rgb(109, 106, 106, 0.4);
+  border-radius: 15px;
+  background: linear-gradient(#464646, #1d1d1d);
+  transition: ease-in-out, 0.3s;
+}
+.animation-wd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: #fff;
+  border: solid;
+  height: 90px;
+  width: 150px;
+  border-color: rgb(109, 106, 106, 0.4);
+  border-radius: 15px;
+  background: linear-gradient(#464646, #1d1d1d);
+  transition: ease-in-out, 0.3s;
+}
+}
+
+
 </style>
 
 
@@ -459,7 +538,7 @@ export default {
     },
     initPlane() {
       const flightPath = {
-        curviness: 1,
+        curviness: 1.4,
         autoRotate: true,
         values: [
           { x: -900, y: 900 },
