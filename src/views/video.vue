@@ -1,12 +1,13 @@
 <template>
   <v-container fluid style="padding: 0">
-    
     <v-parallax
-      scale="1.4"
-      height="100vh"
-      class="responsive-portrait"
-      src="/assets/img/beach.jpg"
-    ></v-parallax>
+    scale="1.3"
+    height="100vh"
+    class="responsive-portrait"
+    src="/assets/img/beach.jpg"
+    ><div class="logo"><img src="/assets/img/logoem.png" alt="logo" /></div>
+  </v-parallax>
+    
     <v-parallax
     scale="1.5"
     dark
@@ -142,6 +143,15 @@ p {
 .background{
   background-size: cover;
 }
+.logo {
+  text-align: center;
+  margin-top: 7%;
+}
+
+.logo img {
+  height: 75vh;
+}
+
 
 @media (max-width: 900px) {
   .responsive-portrait {
@@ -152,6 +162,18 @@ p {
     width: 320px;
   height: 130px;
   text-align: center;
+  }
+
+
+.logo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+  }
+
+  .logo img {
+    height: 50vh;
   }
 }
 </style>

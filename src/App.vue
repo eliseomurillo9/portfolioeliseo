@@ -8,23 +8,43 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&family=Montserrat:wght@200,600;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&family=Montserrat:wght@200;300;600;700;900&display=swap"
     rel="stylesheet"
   />
   <v-app style="background-color: red">
     <v-layout style="overflow: hidden">
-      <v-app-bar absolute color="deep-purple">
+      <v-app-bar absolute color="rgb(109, 106, 106, 0.1)"> 
         <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       </v-app-bar>
       <v-navigation-drawer v-model="drawer" absolute temporary>
         <v-list dense @click="drawer = false"
-          ><v-list-item title="Home" href="#"></v-list-item>
-          <v-list-item title="About" href="#about"></v-list-item>
-          <v-list-item title="Portfolio"></v-list-item>
-          <v-list-item title="Video" link="/about" href="#video"></v-list-item>
-          <v-list-item title="Graphic Desing" href="#desings"></v-list-item>
-          <v-list-item title="Photography" href="#photography"></v-list-item>
-          <v-list-item title="Web Development" href="#video"></v-list-item>
+          ><v-list-item class="titles" href="#">Home</v-list-item>
+          <v-list-item class="titles" href="#about">About</v-list-item>
+          <v-list-item class="titles">Portfolio</v-list-item>
+          <v-divider
+            inset
+            thickness="5px"
+            theme="dark"
+            role="presentation"
+          ></v-divider>
+          <v-list-item class="sub-titles" link="/about" href="#video"
+            >Video</v-list-item
+          >
+          <v-list-item
+            class="sub-titles"
+            title="Graphic Desing"
+            href="#desings"
+          ></v-list-item>
+          <v-list-item
+            class="sub-titles"
+            title="Photography"
+            href="#photography"
+          ></v-list-item>
+          <v-list-item
+            class="sub-titles"
+            title="Web Development"
+            href="#video"
+          ></v-list-item>
         </v-list>
       </v-navigation-drawer>
 
@@ -79,12 +99,11 @@ export default {
     drawer: false,
   }),
 
-  methods:{
-    goWebSite (site){
+  methods: {
+    goWebSite(site) {
       window.open(site, "_blank");
-
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -97,5 +116,18 @@ export default {
 .v-footer {
   padding: 0;
   background-color: #171717;
+}
+
+.titles {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 30px;
+  color: #3466aa; 
+}
+
+.sub-titles{
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 15px;
 }
 </style>

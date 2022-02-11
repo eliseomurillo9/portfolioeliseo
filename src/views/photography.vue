@@ -1,60 +1,94 @@
 <template>
   <v-parallax
-    scale="1.3"
+    scale="1.4"
     height="100vh"
-    width="100vw"
-    src="/assets/img/campamento.jpg"
-  ></v-parallax>
-  <v-row>
-    <v-col v-for="url in photos" :key="url" class="d-flex child-flex" cols="6">
-      <v-img
-        :src="url"
-        :lazy-src="url"
-        class="grey lighten-2"
-        @click="openImage(url)"
+    class="responsive-portrait"
+    src="/assets/img/london.jpg"
+    ><div class="logo"><img src="/assets/img/logoem.png" alt="logo" /></div>
+  </v-parallax>
+  <v-parallax scale="1.5" dark src="/assets/img/backgroundrombos.jpg">
+    <v-row>
+      <v-col
+        v-for="url in photos"
+        :key="url"
+        class="d-flex child-flex"
+        cols="6"
       >
-        <template v-slot:placeholder>
-          <v-row class="fill-height ma-0" align="center" justify="center" >
-            <v-progress-circular
-              indeterminate
-              color="grey lighten-5"
-            ></v-progress-circular>
-          </v-row>
-        </template>
-      </v-img>
-    </v-col>
-  </v-row>
-   <v-dialog
+        <v-img
+          :src="url"
+          :lazy-src="url"
+          class="grey lighten-2"
+          @click="openImage(url)"
+        >
+          <template v-slot:placeholder>
+            <v-row class="fill-height" align="center" justify="center">
+              <v-progress-circular
+                indeterminate
+                color="grey lighten-5"
+              ></v-progress-circular>
+            </v-row>
+          </template>
+        </v-img>
+      </v-col>
+    </v-row>
+    <v-dialog
       v-model="dialog"
       hide-overlay
       overlay-color="black"
-      overlay-opacity = "50"
+      overlay-opacity="50"
     >
       <v-card>
-        <img :src="currentImg" alt="img" style="max-width: -webkit-fill-available;"/>
+        <img
+          :src="currentImg"
+          alt="img"
+          style="max-width: -webkit-fill-available"
+        />
         <v-card-actions>
-          <v-btn color="primary" block @click="closeImage(url)">Close Dialog</v-btn>
+          <v-btn color="#3466aa" block @click="closeImage(url)">X</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
+  </v-parallax>
 </template>
 
 <style scoped>
+.logo {
+  text-align: center;
+  margin-top: 7%;
+}
+
+.logo img {
+  height: 75vh;
+}
+
+@media (max-width: 900px) {
+  .logo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+  }
+
+  .logo img {
+    height: 50vh;
+  }
+}
 </style>
 
 <script>
 export default {
   data: () => ({
     photos: [
-      "/assets/img/post3.jpg",
-      "https://picsum.photos/500/300?image=20",
-      "https://picsum.photos/500/300?image=25",
-      "https://picsum.photos/500/300?image=30",
-      "https://picsum.photos/500/300?image=15",
-      "https://picsum.photos/500/300?image=15",
-      "https://picsum.photos/500/300?image=15",
-      "https://picsum.photos/500/300?image=15",
-      "https://picsum.photos/500/300?image=15",
+      "/assets/img/photos/photo1.jpg",
+      "/assets/img/photos/photo2.jpg",
+      "/assets/img/photos/photo3.jpg",
+      "/assets/img/photos/photo4.jpg",
+      "/assets/img/photos/photo5.jpg",
+      "/assets/img/photos/photo6.jpg",
+      "/assets/img/photos/photo7.jpg",
+      "/assets/img/photos/photo8.jpg",
+      "/assets/img/photos/photo9.jpg",
+      "/assets/img/photos/photo10.jpg",
     ],
 
     currentImg: "https://picsum.photos/500/300?image=15",
@@ -62,15 +96,14 @@ export default {
     dialog: false,
   }),
   methods: {
-    openImage(url){
+    openImage(url) {
       this.dialog = true;
-      this.currentImg= url
+      this.currentImg = url;
     },
-    
-    closeImage(){
-      this.dialog = false;
-    }
-  }
 
+    closeImage() {
+      this.dialog = false;
+    },
+  },
 };
 </script>

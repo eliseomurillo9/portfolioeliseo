@@ -101,7 +101,7 @@
             rounded="lg"
             class="buttom-more"
             style="background-color: white"
-            href="/about#/about"
+            href="#about"
           >
             See more
           </v-btn>
@@ -121,7 +121,7 @@
           lg="3"
         >
           <v-row justify="center">
-            <v-card class="mx-auto, animation" dark>
+            <v-card class="mx-auto, animation" href="#video" dark>
               <h3 class="textbox">Videos</h3>
             </v-card>
           </v-row>
@@ -135,7 +135,7 @@
           lg="3"
         >
           <v-row justify="center">
-            <v-card class="mx-auto, animation-gd" dark>
+            <v-card class="mx-auto, animation-gd" href="#desings" dark>
               <h3 class="textbox" s>Graphic Design</h3>
             </v-card>
           </v-row>
@@ -149,7 +149,7 @@
           lg="3"
         >
           <v-row justify="center">
-            <v-card class="mx-auto, animation-p" dark>
+            <v-card class="mx-auto, animation-p" href="#photography" dark>
               <h3 class="textbox">Photography</h3>
             </v-card>
           </v-row>

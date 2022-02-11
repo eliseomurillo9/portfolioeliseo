@@ -1,62 +1,56 @@
  <template>
-  
-    <v-parallax
-      scale="1.4"
-      height="100vh"
-      class="responsive-portrait"
-      src="/assets/img/campamento.jpg"
-      ><div class="logo"><img src="/assets/img/logoem.PNG" alt="logo" /></div>
-      </v-parallax
-    >
-    <v-parallax
-    scale="1.5"
-    dark
-    src="/assets/img/backgroundrombos.jpg"
-  >
+  <v-parallax
+    scale="1.4"
+    height="100vh"
+    class="responsive-portrait"
+    src="/assets/img/campamento.jpg"
+    ><div class="logo"><img src="/assets/img/logoem.png" alt="logo" /></div>
+  </v-parallax>
+  <v-parallax scale="1.5" dark src="/assets/img/backgroundrombos.jpg">
     <v-row align="center" justify="center">
       <v-col class="text-center box mt-12 ml-sm-5 mr-sm-5" cols="10">
         <div>
           <h2 class="about-title">About me</h2>
           <br />
           <p>
-            Soy Eliseo Murillo, un joven Salvadoreño de 26 años, piloto y
-            productor audiovisual. Actualmente resido en Francia, donde me estoy
-            entrenando como web developer.
+            I am Eliseo Murillo, Salvadoran, 26 years old. Licensed pilot, and
+            audiovisual producer. Currently, I am living in France, and training
+            to be a web developer.
           </p>
           <br />
 
           <p>
-            Inicie mis estudios en el año 2014 en “Escuela de Aviación Panal” en
-            El Salvador, donde al cabo de cuatro años logré graduarme como
-            piloto comercial. Posterior a ello, del año 2018 al 2020, me
-            desempeñe como CFI dentro de la misma escuela.
+            I started my certifications back in 2014 at “Escuela de Aviación
+            Panal” in El Salvador, finishing in 2018, certified with a
+            Commercial Pilot License and multi-engine and instructor rating.
+            Once I acquired my licenses, I performed for two years as a
+            certified flight instructor.
           </p>
           <br />
 
           <p>
-            Mientras me formaba como piloto, inició mi pasión por la producción
-            y diseño. Realizando de forma autodidacta, cursos relacionados a la
-            producción audiovisual, fotografía y softwares de diseño. Llevando
-            así, a poder desempeñarme en el rubro como editor de video,
-            asistente de producción, camarógrafo y dronista con diversas
-            productoras, agencias y marcas comerciales, del año 2015 hasta la
-            actualidad.
+            While I was studying to get my flight certification, I found passion
+            on audiovisual production and graphic designing, I started
+            self-paced courses related to audiovisual production, photography,
+            and graphic designing. To the extend to gain experience in the area
+            as video editor, production assistant, cameraman, photographer and
+            drone operator for different producing and marketing agencies, and
+            marketing brands.
           </p>
           <br />
 
           <p>
-            A consecuencia del COVID-19, decidí cambiar mi rumbo profesional y
-            fusionar todas mis habilidades para desempeñarlas en la
-            informática.<br />Actualmente, me encuentro realizando cursos que
-            incluyen tecnologías tales como html, css y javascript, buscando el
-            formarme como web developer
+            Due to COVID-19 pandemic, I decided to expand my professional career
+            combining all my skills into information technology area, with my
+            versatility, autonomy and critical thinking. Currently I am coursing
+            certifications including programming languages as html, css,
+            javascrpit, as web developer.
           </p>
           <br />
 
           <p>
-            Mi meta es poder seguir desarrollándome como un programador full
-            stack, donde pueda incluir mis habilidades y experiencias
-            profesionales.
+            My goal is to continue learning to perform as a full stack
+            programmer, combining my skills and work experience.
           </p>
         </div>
       </v-col>
@@ -65,28 +59,22 @@
       <v-col class="text-center box mt-12 mb-12 ml-sm-5 mr-sm-5" cols="10">
         <div class="cv" style="margin-bottom: 45px">
           <h2 style="text-align: center">Experiencia</h2>
-          <h3>2014</h3>
+          <h3>2020 - Present</h3>
           <v-divider
             inset
             thickness="2px"
             theme="dark"
             role="presentation"
           ></v-divider>
-          <p>
-            Camarografo, editor de video y dronista - Mediolleno Producciones,
-            El Salvador.
-          </p>
-          <h3>2016 - 2018</h3>
+          <p>Freelance as Graphic Designer, Video Editor and Animation - El Salvador</p>
+          <h3>2018 - 2020</h3>
           <v-divider
             inset
             thickness="2px"
             theme="dark"
             role="presentation"
           ></v-divider>
-          <p>
-            Freelance como dronista, camarógrafo, editor de video y asistente de
-            producción - El Salvador.
-          </p>
+          <p>certified Flight Instructor - Escuela de Aviación PANAL, El Salvador.</p>
           <h3>2018 - 2019</h3>
           <v-divider
             inset
@@ -95,25 +83,19 @@
             role="presentation"
           ></v-divider>
           <p>
-            Director y productor de contenido - Iglesia COMPAZ, El Salvador.
+            Director and Content Producer - Iglesia COMPAZ, El Salvador.
           </p>
-          <h3>2018 - 2020</h3>
+          <h3>2014</h3>
           <v-divider
             inset
             thickness="2px"
             theme="dark"
             role="presentation"
           ></v-divider>
-          <p>Instructor de vuelo - Escuela de Aviación PANAL, El Salvador.</p>
-          <h3>2020 - Presente</h3>
-          <v-divider
-            inset
-            thickness="2px"
-            theme="dark"
-            length="1105px"
-            role="presentation"
-          ></v-divider>
-          <p>Freelance como diseñador, editor y animador - El Salvador</p>
+          <p>
+            Cameraman, video editor y drone operator - Mediolleno Producciones,
+            El Salvador.
+          </p>
         </div>
       </v-col>
     </v-row>
@@ -122,9 +104,9 @@
         <div class="design">
           <h3>softwares</h3>
           <div class="softwarelogo">
-            <img src="/assets/img/photoshop.PNG" alt="photoshop" />
-            <img src="/assets/img/premier.PNG" alt="premier" />
-            <img src="/assets/img/after.PNG" alt="after" />
+            <img src="/assets/img/photoshop.png" alt="photoshop" />
+            <img src="/assets/img/premier.png" alt="premier" />
+            <img src="/assets/img/after.png" alt="after" />
           </div>
         </div>
         <v-divider
@@ -137,9 +119,9 @@
         <div class="webdev">
           <h3>Lenguajes</h3>
           <div class="softwarelogo">
-            <img src="/assets/img/html.PNG" alt="html" />
-            <img src="/assets/img/css.PNG" alt="html" />
-            <img src="/assets/img/javascript.PNG" alt="html" />
+            <img src="/assets/img/html.png" alt="html" />
+            <img src="/assets/img/css.png" alt="html" />
+            <img src="/assets/img/javascript.png" alt="html" />
           </div>
         </div>
       </v-col>
@@ -149,7 +131,6 @@
 <style scoped>
 .logo {
   text-align: center;
-  
 }
 
 .logo img {
@@ -214,9 +195,9 @@ h2 {
   font-size: 25px;
 }
 
-.about-title{
-font-size: 5rem;
-text-align: center;
+.about-title {
+  font-size: 5rem;
+  text-align: center;
 }
 @media (max-width: 900px) {
   .logo {
