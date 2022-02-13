@@ -61,7 +61,7 @@
           style="text-align: center"
         >
           <h2>Audiovisual</h2>
-          <h4>2014 - 2020</h4>
+          <h4>2014 - Present</h4>
         </v-col>
       </v-row>
       <v-row justify="start">
@@ -90,7 +90,7 @@
           <div class="respon">
             <h2>Web Development</h2>
           </div>
-          <h4>2014 - 2020</h4>
+          <h4>2022</h4>
         </v-col>
       </v-row>
 
