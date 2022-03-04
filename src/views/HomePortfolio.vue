@@ -163,7 +163,7 @@
           lg="3"
         >
           <v-row justify="center">
-            <v-card class="mx-auto, animation-wd" dark>
+            <v-card class="mx-auto, animation-wd" href="#webdev" dark>
               <h3 class="textbox">
                 Web<br />
                 Development
@@ -255,7 +255,7 @@ h4 {
 }
 
 .animation-gd:hover {
-  background-image: url("../../public/assets/img/portada-video.gif");
+  background-image: url("../../public/assets/img/desing.gif");
   background-size: cover;
   border-color: #fff;
   cursor: pointer;

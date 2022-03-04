@@ -43,7 +43,7 @@
           <v-list-item
             class="sub-titles"
             title="Web Development"
-            href="#video"
+            href="#webdev"
           ></v-list-item>
         </v-list>
       </v-navigation-drawer>
@@ -69,10 +69,10 @@
           ></v-btn>
           <v-btn
             class="mx-4"
-            icon="mdi-instagram"
+            icon="mdi-mail"
             variant="plain"
             color="white"
-            @click="goWebSite('')"
+            @click="goWebSite('mailto:eliseomurillo9@gmail.com')"
           ></v-btn>
           <v-btn
             class="mx-4"
