@@ -1,4 +1,12 @@
 <template>
+<v-lazy
+        v-model="isActive"
+        :options="{
+          threshold: .5
+        }"
+        min-height="200"
+        transition="fade-transition"
+      >
   <v-container fluid style="padding: 0">
     <v-row>
       <v-parallax
@@ -174,6 +182,7 @@
       </v-row>
     </div>
   </v-container>
+  </v-lazy>
 </template>
 
 <style scoped>

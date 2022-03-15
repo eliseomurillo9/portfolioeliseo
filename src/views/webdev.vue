@@ -14,6 +14,7 @@
     </v-row>
     <v-row align="center" justify="center">
       <v-col class="text-center box mt-12 ml-sm-5 mr-sm-5" cols="10">
+        <h2>Projects done for FreeCodeCamp certification</h2>
           <iframe class="centerPen" scrolling="no" title="IKEA" src="https://codepen.io/eliseomurillo9/embed/XWaKYmP?default-tab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/eliseomurillo9/pen/XWaKYmP">
   IKEA</a> by Josue (<a href="https://codepen.io/eliseomurillo9">@eliseomurillo9</a>)
@@ -22,7 +23,7 @@
       </v-col>
     </v-row >
     <v-row align="center" justify="center">
-    <v-col class="text-center box mt-12 ml-sm-5 mr-sm-5 mb-10" cols="10">
+    <v-col class="text-center box  ml-sm-5 mr-sm-5 mb-10" cols="10">
       <iframe class="centerPen" scrolling="no" title="JS" src="https://codepen.io/eliseomurillo9/embed/QWMdEwq?default-tab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/eliseomurillo9/pen/QWMdEwq">
   JS</a> by Josue (<a href="https://codepen.io/eliseomurillo9">@eliseomurillo9</a>)
@@ -48,6 +49,17 @@
   width: 100%;
 }
 
+h2 {
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+  line-height: 1;
+  font-weight: 500;
+  font-family: Montserrat;
+  font-weight: 600;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
 @media (max-width: 900px) {
   .logo {
     text-align: center;
@@ -64,6 +76,13 @@
   height:400px;
   width: 100%;
 }
+
+h2 {
+    font-size: 20px;
+    text-align: end;
+    color: #fff;
+    line-height: 1;
+  }
 }
 </style>
 
