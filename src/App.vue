@@ -12,11 +12,11 @@
     rel="stylesheet"
   />
   <v-app style="background-color: red">
-    <v-layout style="overflow: hidden">
-      <v-app-bar absolute color="rgb(109, 106, 106, 0.1)"> 
+    <v-layout style="overflow: hidden" >
+      <v-app-bar absolute color="rgb(109, 106, 106, 0.0)" class="position-bar" style="box-shadow: 10px 5px 5px rgb(109, 106, 106, 0.0);">  
         <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       </v-app-bar>
-      <v-navigation-drawer v-model="drawer" absolute temporary>
+      <v-navigation-drawer v-model="drawer" absolute temporary class="position" style="border-radius: 15px;">
         <v-list dense @click="drawer = false"
           ><v-list-item class="titles" href="#">Home</v-list-item>
           <v-list-item class="titles" href="#about">About</v-list-item>
@@ -129,5 +129,16 @@ export default {
   font-family: Montserrat;
   font-weight: 300;
   font-size: 15px;
+}
+
+.position{
+  position: fixed;
+  
+}
+
+.position-bar{
+  position: fixed;
+  top: 25px;
+
 }
 </style>
