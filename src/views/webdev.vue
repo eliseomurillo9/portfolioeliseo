@@ -111,7 +111,7 @@
 
 .title h2{
   font-size: 35px;
-  color: aquamarine;
+  color: #3466aa;
   text-align: center;
   margin: 25px 0 25px 0;
   font-family: Montserrat;
@@ -188,6 +188,10 @@
   width: 204px;
   padding: 0%;
   margin-top: 15px;
+}
+
+.logos img {
+  height: 40px;
 }
 }
 </style>

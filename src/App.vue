@@ -138,7 +138,5 @@ export default {
 
 .position-bar{
   position: fixed;
-  top: 25px;
-
 }
 </style>

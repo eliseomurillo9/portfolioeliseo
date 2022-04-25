@@ -13,7 +13,7 @@
           <h2 class="about-title">About me</h2>
           <br />
           <p>
-            I am Eliseo Murillo, Salvadoran, 26 years old. Licensed pilot, and
+            I am Eliseo Murillo, Salvadorian, 26 years old. Licensed pilot, and
             audiovisual producer. Currently, I am living in France, and training
             to be a web developer.
           </p>
@@ -58,7 +58,7 @@
     <v-row align="center" justify="center">
       <v-col class="text-center box mt-12 mb-12 ml-sm-5 mr-sm-5" cols="10">
         <div class="cv" style="margin-bottom: 45px">
-          <h2 style="text-align: center">Experiencia</h2>
+          <h2 style="text-align: center">Experience</h2>
           <h3>2020 - Present</h3>
           <v-divider
             inset
@@ -102,7 +102,7 @@
     <v-row align="center" justify="center">
       <v-col class="text-center box-soft mt-12 mb-12 ml-sm-5 mr-sm-5" cols="10">
         <div class="design">
-          <h3>softwares</h3>
+          <h3>Softwares</h3>
           <div class="softwarelogo">
             <img src="/assets/img/photoshop.png" alt="photoshop" />
             <img src="/assets/img/premier.png" alt="premier" />
